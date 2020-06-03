@@ -31,7 +31,17 @@ const styles = StyleSheet.create({
   inputContainer: {
     width: 300,
     maxWidth: '80%',
-    alignItems: 'center'
+    alignItems: 'center',
+    // Shadow properties only work on IOS
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    shadowOpacity: 0.26,
+    // Elevation only works on Android
+    elevation: 5,
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 10
   },
   buttonContainer: {
     flexDirection: 'row',
